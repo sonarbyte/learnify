@@ -1,114 +1,94 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></script>
-  <title>Learnify</title>
-  <link rel="shortcut icon" href="favicon.html">   
-   <link href="public/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
-   <link href="public/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
-</head>
+<?php
+include("header.php");
+?>
+<!-- Main -->
 <div class="container">
-<br>
-<div class="navbar navbar-inverse">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Brand</a>
-  </div>
-  <div class="navbar-collapse collapse navbar-inverse-collapse">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Active</a></li>
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li class="dropdown-header">Dropdown header</li>
-          <li><a href="#">Separated link</a></li>
-          <li><a href="#">One more separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="navbar-form navbar-left">
-      <input class="form-control col-lg-8" placeholder="Search" type="text">
-    </form>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Link</a></li>
-      <li class="dropdown">
-        <a  href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-</div>
-<form class="form-horizontal">
-  <fieldset>
-    <legend>Legend</legend>
-    <div class="form-group">
-      <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-      <div class="col-lg-10">
-        <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-      </div>
+  
+  <!-- upper section -->
+  <div class="row">
+	<div class="col-sm-3">
+      <!-- left -->
+      <h3><i class="glyphicon glyphicon-briefcase"></i> Toolbox</h3>
+      <hr>
+      
+      <ul class="nav nav-stacked">
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-flash"></i> Alerts</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-link"></i> Links</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-book"></i> Books</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-briefcase"></i> Tools</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-time"></i> Real-time</a></li>
+        <li><a href="javascript:;"><i class="glyphicon glyphicon-plus"></i> Advanced..</a></li>
+      </ul>      
+      <hr>
+  	</div><!-- /span-3 -->
+    <div class="col-sm-9">
+      	
+      <!-- column 2 -->	
+       <h3><i class="glyphicon glyphicon-dashboard"></i> Dashboard</h3>    
+       <hr>
+	   <div class="row">
+            <!-- center left-->	
+         	<div class="col-md-7">
+			  <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
+              
+                          <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
+                          <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
+                           <div class="well">Inbox Messages <span class="badge pull-right">3</span></div>
+
+              <hr>
+              
+
+                  </div><!--/panel-body-->
+              </div><!--/panel-->                     
+     </div>
+       </div><!--/row-->
+  	</div><!--/col-span-9-->
+    
+  </div><!--/row-->
+  <!-- /upper section -->
+  
+  <!-- lower section -->
+  <div class="row">
+    
+    <div class="col-md-12">
     </div>
-    <div class="form-group">
-      <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-      <div class="col-lg-10">
-        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Checkbox
-          </label>
-        </div>
+    <div class="col-md-8">
+
+
+<footer class="text-center">This Bootstrap 3 dashboard layout is compliments of <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
+
+
+<div class="modal" id="addWidgetModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">Add Widget</h4>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-      <div class="col-lg-10">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-        <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+      <div class="modal-body">
+        <p>Add a widget stuff here..</p>
       </div>
-    </div>
-    <div class="form-group">
-      <label class="col-lg-2 control-label">Radios</label>
-      <div class="col-lg-10">
-        <div class="radio">
-          <label>
-            <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
-            Option one is this
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-            Option two can be something else
-          </label>
-        </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="select" class="col-lg-2 control-label">Selects</label>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
-<script src="./public/js/jquery.min.js"></script>			 
-<script src="./public/js/bootstrap.min.js"></script>
-</body>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dalog -->
+<ul class="pagination pagination-lg">
+  <li class="disabled"><a href="#">«</a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+</div><!-- /.modal -->
+
+
+
+  
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
