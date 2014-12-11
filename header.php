@@ -39,8 +39,8 @@
     </ul>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-         <li><a href="#">Sign In</a></li>
-          <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Sign Up</a></li>
         <!--<li class="dropdown">
           <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
            <i class="glyphicon glyphicon-user"></i> Admin <span class="caret"></span></a>
@@ -48,8 +48,6 @@
             <li><a href="#">My Profile</a></li>
             <li><a href="#"><i class="glyphicon glyphicon-lock"></i> Logout</a></li>
            -->
-             </ul>
-        </li>
       </ul>
     </div>
   </div><!-- /container -->
