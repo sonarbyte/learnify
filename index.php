@@ -40,6 +40,7 @@ include("header.php");
     <div class="col-md-8">
 
 
+<footer class="text-center">SonarByte <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
 
 
 <div class="modal" id="addWidgetModal">
@@ -67,13 +68,7 @@ include("header.php");
 </ul>
 </div><!-- /.modal -->
 
-<nav class="navbar navbar-default navbar-fixed-bottom">
-<div id="footer">
-  <div class="container">
-    <p class="text-muted credit"><i><b>LearniFy</b></i>  2014-2016, all rights reserved.</p>
-  </div>
-</div>
-</nav>
+
 
   
 	<!-- script references -->
