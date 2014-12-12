@@ -11,6 +11,4 @@ session_unset();
 session_destroy(); 
  mysqli_close($con);
 header('Location: index.html');   
-
-
 ?>

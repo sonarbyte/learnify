@@ -3,28 +3,15 @@ include("header.php");
 ?>
 <!-- Main -->
 <div class="container">
-  
   <!-- upper section -->
   <div class="row">
 	<div class="col-sm-3">
       <!-- left -->
-      <h3><i class="glyphicon glyphicon-briefcase"></i> Toolbox</h3>
-      <hr>
-      
-      <ul class="nav nav-stacked">
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-flash"></i> Alerts</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-link"></i> Links</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-list-alt"></i> Reports</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-book"></i> Books</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-briefcase"></i> Tools</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-time"></i> Real-time</a></li>
-        <li><a href="javascript:;"><i class="glyphicon glyphicon-plus"></i> Advanced..</a></li>
-      </ul>      
-      <hr>
-  	</div><!-- /span-3 -->
+       <?php include("./menu.php") ?>
+       </div><!-- /span-3 -->
+
     <div class="col-sm-9">
-      	
-      
+
 <?php include("./body.php") ; ?> 
 
 
@@ -36,10 +23,6 @@ include("header.php");
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 <!---------------------------->
-
-
-
-
 
        </div><!--/panel-->                     
      </div>
@@ -57,7 +40,7 @@ include("header.php");
     <div class="col-md-8">
 
 
-<footer class="text-center">This Bootstrap 3 dashboard layout is compliments of <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
+<footer class="text-center">SonarByte <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
 
 
 <div class="modal" id="addWidgetModal">
