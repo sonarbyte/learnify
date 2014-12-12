@@ -40,7 +40,6 @@ include("header.php");
     <div class="col-md-8">
 
 
-<footer class="text-center">SonarByte <a href="http://www.bootply.com/85850"><strong>Bootply.com</strong></a></footer>
 
 
 <div class="modal" id="addWidgetModal">
