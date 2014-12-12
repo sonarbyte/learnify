@@ -68,7 +68,13 @@ include("header.php");
 </ul>
 </div><!-- /.modal -->
 
-
+<nav class="navbar navbar-default navbar-fixed-bottom">
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit"><i><b>LearniFy</b></i>  2014-2016, all rights reserved.</p>
+  </div>
+</div>
+</nav>
 
   
 	<!-- script references -->

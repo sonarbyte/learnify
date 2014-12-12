@@ -29,3 +29,17 @@ footer {
   -o-border-radius: 10px;
   border-radius: 10px;
 }
+
+.container .credit {
+  margin: 16px 0;
+}
+
+#footer > .container {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar .container { 
+	height: 48px; 
+}
