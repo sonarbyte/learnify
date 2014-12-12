@@ -12,7 +12,7 @@ include("header.php");
 
     <div class="col-sm-9">
 
-<?php include("./body.php") ; ?> 
+<?php include($_GET['body']) ; ?> 
 
 
 <!---------------------------->
