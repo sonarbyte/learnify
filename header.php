@@ -46,6 +46,7 @@
         <span class="glyphicon glyphicon-cog" style="color: #FFF" aria-label="Edit"></span>
        </a>
        <ul class="dropdown-menu">
+       <li><a href="/logout.php"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;Profile</a></li>
         <li><a href="/logout.php"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;Log out</a></li>
         <li class="divider"></li>
         <li><a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;&nbsp;Setting</a></li>

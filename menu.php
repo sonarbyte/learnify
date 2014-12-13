@@ -6,5 +6,4 @@
         <li><a href="./?body=my_learnifyer.php"><i class="glyphicon glyphicon-th-list"></i> My learnifyers</a></li>
         <li><a href="./?body=add.php"><i class="glyphicon glyphicon-star-empty"></i> Favorites </a></li>
         <li><a href="./?body=add.php"><i class="glyphicon glyphicon-star-empty"></i>Browse learnifyer</a></li>
-         <li><a href=""><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
 </ul>
