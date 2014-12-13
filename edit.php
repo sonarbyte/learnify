@@ -1,4 +1,3 @@
-<head>
 <script type="text/javascript" src="./tinymce/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinymce.init({
@@ -19,13 +18,14 @@ templates: [
 ]
 });
 </script>
-</head>
-<body>
- <div class="row">
-<div class="col-md-7">
+<br>
+<div class="form-group">
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title"><h3><i class="glyphicon glyphicon-plus"></i> Create Learnifyer</h3>   </h3>
+  </div>
 <form method="post" action="somepage">
-<textarea name="content" style="width:100%"></textarea>
+<textarea name="content" style="width:100%; height:220px"></textarea>
 </form>
- </div>	
 </div>
-</body>
+</div>

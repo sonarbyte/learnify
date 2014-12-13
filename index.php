@@ -1,15 +1,12 @@
 <?php include("header.php") ?>
 <div class="container">
   <div class="row">
-	<div class="col-sm-3">
+	<div class="col-sm-2">
   <?php include("menu.php") ?>
   </div>
-  <div class="col-sm-9">
+  <div class="col-sm-8">
+  <br><br><br><br>
   <?php include($_GET['body']) ; ?> 
-  </div>
-  </div>
-  <div class="row">
-  <div class="col-sm-10">
   </div>
   <div class="col-sm-2">
   </div>
