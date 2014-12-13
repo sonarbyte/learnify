@@ -18,7 +18,6 @@ templates: [
 ]
 });
 </script>
-<br>
 <div class="form-group">
 <div class="panel panel-info">
   <div class="panel-heading">

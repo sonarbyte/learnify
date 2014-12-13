@@ -1,4 +1,3 @@
-<br>
 <div class="form-group">
 <div class="panel panel-info">
   <div class="panel-heading">
@@ -6,16 +5,13 @@
   </div>
 <ul class="list-group">
   <li class="list-group-item">
-    <span class="badge"> <i class="glyphicon glyphicon-pencil"></i> </span>
-Create Tuto
+    <a href="./?body=edit.php" class="btn btn-info btn-block"><i class="glyphicon glyphicon-pencil"></i> Create Tuto</a>
   </li>
   <li class="list-group-item">
-    <span class="badge"><i class="glyphicon glyphicon-pencil"></i> </span>
- Create Cheatsheet
+   <a href="./?body=edit.php" class="btn btn-info btn-block"><i class="glyphicon glyphicon-pencil"></i> Create Cheartsheet</a>
   </li>
   <li class="list-group-item">
-    <span class="badge"><i class="glyphicon glyphicon-pencil"></i> </span>
-  Create Cours
+   <a href="./?body=edit.php" class="btn btn-info btn-block"><i class="glyphicon glyphicon-pencil"></i> Create cours</a>
   </li>
 </ul>
 </div>
