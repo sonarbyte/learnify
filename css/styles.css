@@ -20,7 +20,7 @@ footer {
   font-size: 10px;
   font-weight: normal;
   background: rgba(41,200,41,0.75);
-  color: rgb(255,255,255);
+  color: rgb(255,255,255);, so I will wait for the reply
   line-height: 1em;
   padding: 2px 4px;
   -webkit-border-radius: 10px;
@@ -31,7 +31,7 @@ footer {
 }
 
 .container .credit {
-  margin: 16px 0;
+  margin: 8px 0;
 }
 
 #footer > .container {
@@ -40,6 +40,6 @@ footer {
   padding-right: 15px;
 }
 
-.navbar .container { 
-	height: 48px; 
+.navbar-fixed-down .container { 
+	height: 64px; 
 }
