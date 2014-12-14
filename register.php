@@ -1,4 +1,3 @@
-          <br><br>
           <div class="panel panel-default col-md-10 col-md-offset-1 well">
             <div class="panel-heading">
               <h3>Sing up</h3>
@@ -34,20 +33,27 @@
                     </div>
                   </div>
                 </div>
-                <div class="control-group">
-         <label class="control-label" for="captcha">Captcha</label>
+         <!--<label class="control-label" for="captcha">Captcha</label>-->
      <div class="controls">
-         <img id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" />
-         <div class="col-md-6 col-md-offset-6">
-         <input type="text" autocomplete="off"  name="captcha_code" size="10" maxlength="8" class="form-control" placeholder="Captcha">
+
+                <div class="row">
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+         <img height="60" width="260" id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" />
          </div>
-         <a href="#" onclick="document.getElementById('captcha').src = './securimage/securimage_show.php?' + Math.random(); return false">Different Image</a>
+         </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+         <input type="text" autocomplete="off"  name="captcha_code" size="10" maxlength="8" class="form-control input-sm" placeholder="Captcha">
+         <a href="#" onclick="document.getElementById('captcha').src = './securimage/securimage_show.php?' + Math.random(); return false"><i>Different image</i></a>
+         </div>
+         </div>
+
      </div> 
-    </div>
     <br>
     <br>
 
-                <input type="submit" value="Register" class="btn btn-info btn-block">
+                <input type="submit" value="Register" class="btn btn-primary btn-block">
               
               </form>
             </div>
