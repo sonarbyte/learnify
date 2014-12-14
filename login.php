@@ -1,4 +1,8 @@
 <div align="center" >    <div class="control-group">
+       <div class="controls">
+          <h1>Sign in </h1><br>
+        </div>
+
           <label class="control-label" for="email">Email</label>
           <div class="controls">
             <input class="focus" id="LoginForm_email" name="email" placeholder="Email" type="text" value="">
@@ -21,8 +25,8 @@
 
         <div class="controls">
           <input class="btn btn-primary" data-disable-with="Signing in..." id="signin_button" name="commit" type="submit" value="Sign In">
-          <br><br>Don't have an account yet? <a href="./register.html">Sign up</a>
-          <br><a href="./forgotpassword.html">Forgot password?</a>
+          <br><br>Don't have an account yet? <a href="./register.php">Sign up</a>
+          <br><a href="./forgotpassword.php">Forgot password?</a>
         </div>
         
 </form>    </div>

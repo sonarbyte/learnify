@@ -63,7 +63,7 @@
 else {
 
 echo "<li><a href='./?body=login.php'>Sign in</a></li>" ;
-echo "<li><a href='./?body=register.php'>Register</a></li>" ;
+echo "<li><a href='./?body=register.php'>Signe Up </a></li>" ;
 
 }
 

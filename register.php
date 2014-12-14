@@ -1,9 +1,66 @@
-<div class="row">
-  <div class="span6 offset3 thumbnail">
-    <div class="caption">
-	<div class="form">
-      <form accept-charset="UTF-8" action="" class="form-horizontal" method="post">
+<div align="center" >
+<form accept-charset="UTF-8" action="./register_action.php" class="form-horizontal" method="post">
 	 
+	  
+        <div class="controls">
+          <h1>Sign Up </h1><br>
+        </div>
+
+		<div class="error">
+		
+					</div>
+		
+        <div class="control-group">
+          <label class="control-label" for="email">Email</label>
+          <div class="controls">
+            <input class="focus" id="email" name="email" placeholder="Email" type="text" value="">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="password">Password</label>
+          <div class="controls">
+            <input autocomplete="off" id="password" name="pass" placeholder="Password" type="password">
+          </div>
+        </div>
+		
+		<div class="control-group">
+          <label class="control-label" for="password">Password</label>
+          <div class="controls">
+            <input autocomplete="off" id="password" name="pass2" placeholder="Password" type="password">
+          </div>
+        </div>
+		
+        <div class="control-group">
+          <label class="control-label" for="wallet">Wallet Addr</label>
+          <div class="controls">
+          <input class="focus" id="Wallet" name="wallet" placeholder="Wallet" type="text" value="">
+          <br><br>I don't have wallet yet? </br><a target="_blank" ; href="https://instant-e.com/index.php?r=site/register">Get free online wallet (not trusted)</a></br>Or </br><a target="_blank" ; href="https://download.litecoin.org/litecoin-0.8.6.2/win32/litecoin-0.8.6.2-win32-setup.exe">Donload the local wallet software (trusted but not fast )</a>
+          </div>
+		</div>
+		
+		
+		<div class="control-group">
+         <label class="control-label" for="captcha">Captcha</label>
+		 <div class="controls">
+         <input type="text" autocomplete="off"  name="captcha_code" size="10" maxlength="8" />
+         <img id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" />
+         <a href="#" onclick="document.getElementById('captcha').src = './securimage/securimage_show.php?' + Math.random(); return false">Different Image</a>
+		 </div> 
+		</div>
+		
+		 <div class="controls">
+          <input class="btn btn-primary" data-disable-with="Signing in..." id="signin_button" name="commit" type="submit" value="Register">
+        </div>
+		
+		
+        </div>
+
+        
+
+       
+        
+</form>  
+</div>	 
 <?php
 error_reporting(0);
 
@@ -143,21 +200,5 @@ echo "Please go <a href='javascript:history.go(-1)'>back</a> and try again.";
 
 
 ?>
-        
-       </form>
-    </div>
-  </div>
-</div>
-<br>
-    </div>
-
-</div><!-- content -->
-
-
-
-
-
-
-</body>
-</html>
+   
 
