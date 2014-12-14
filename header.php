@@ -36,24 +36,40 @@
 <li><a href="#">Contact Us</a></li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
-      <li class="dropdown">
-       <a href="/" >
-        <span class="glyphicon glyphicon-home" style="color: #FFF" aria-label="Home"></span>
-       </a>
-      </li> 
-      <li class="dropdown">
-       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <span class="glyphicon glyphicon-cog" style="color: #FFF" aria-label="Edit"></span>
-       </a>
-       <ul class="dropdown-menu">
-       <li><a href="/logout.php"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;Profile</a></li>
-        <li><a href="/logout.php"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;&nbsp;Log out</a></li>
-        <li class="divider"></li>
-        <li><a href=""><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;&nbsp;Setting</a></li>
-        <li class="divider"></li>
-        <li><a href="/restart.php"><span class="glyphicon glyphicon-refresh"></span>&nbsp;&nbsp;&nbsp;Restart</a></li>
-        <li><a href="/shutdown.php"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;&nbsp;Shutdown</a></li>
-       </ul>
+   <?php if(isset($_SESSION['dat_r']) and !empty($_SESSION['dat_r']))
+			 {
+
+      echo "<li class='dropdown'>" ; 
+      echo " <a href='/' >" ;
+      echo " <span class='glyphicon glyphicon-'home' style='color: #FFF' aria-label='Home'></span>";
+      echo " </a>" ;
+      echo "</li> " ;
+      echo "<li class='dropdown'>" ;
+      echo " <a href='#' class='dropdown-toggle' data-toggle='dropdown'>";
+      echo " <span class='glyphicon glyphicon-cog' style='color: #FFF' aria-label='Edit'></span>";
+      echo "  </a>" ;
+
+    
+       echo "<ul class='dropdown-menu'>" ;
+       echo "<li><a href='./profile.php'><span class='glyphicon glyphicon-user'></span>&nbsp;&nbsp;&nbsp;Profile</a></li>" ;
+       echo "<li><a href='./logout.php'><span class='glyphicon glyphicon-log-out'></span>&nbsp;&nbsp;&nbsp;Log out</a></li>";
+       echo "<li class='divider'></li> ";
+       echo "<li><a href='./setting.php'><span class='glyphicon glyphicon-cog'></span>&nbsp;&nbsp;&nbsp;Settings</a></li>";
+       echo " <li class='divider'></li>";
+       echo " <li><a href='/restart.php'><span class='glyphicon glyphicon-refresh'></span>&nbsp;&nbsp;&nbsp;Restart</a></li>";
+       echo " <li><a href='/shutdown.php'><span class='glyphicon glyphicon-off'></span>&nbsp;&nbsp;&nbsp;Shutdown</a></li>";
+       echo " </ul> ";
+                        }
+else {
+
+echo "<li><a href='./?body=login.php'>Sign in</a></li>" ;
+echo "<li><a href='./?body=register.php'>Register</a></li>" ;
+
+}
+
+
+       ?>
+
       </li>
 
 </ul>

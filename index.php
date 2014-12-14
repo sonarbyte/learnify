@@ -2,7 +2,19 @@
 <div class="container">
   <div class="row">
 	<div class="col-sm-2">
-  <?php include("menu.php") ?>
+   
+  <?php
+ if(isset($_SESSION['dat_r']) and !empty($_SESSION['dat_r']))
+			 {
+ include("menu.php") ;
+
+}
+else{
+
+echo "menu replace " ;
+
+}
+?>
   </div>
   <div class="col-sm-8">
   <br><br><br><br>
