@@ -6,14 +6,14 @@
       <form action="./login_action.php" method="POST">
           <div class="form-group">
             <div class="input-group">
-              <input type="text" name="email" class="form-control input-lg" placeholder="Your Email">
+              <input type="text" name="login" class="form-control input-lg" placeholder="Your Email">
               <label for="uLogin" style="color: black" class="input-group-addon glyphicon glyphicon-user"></label>
             </div>
           </div> <!-- /.form-group -->
 
           <div class="form-group">
             <div class="input-group">
-              <input type="password" class="form-control input-lg" name="password" placeholder="Password">
+              <input type="password" class="form-control input-lg" name="pass" placeholder="Password">
               <label for="uPassword" style="color: black" class="input-group-addon glyphicon glyphicon-lock"></label>
             </div> <!-- /.input-group -->
           </div> <!-- /.form-group -->
