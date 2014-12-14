@@ -1,39 +1,38 @@
-<div align="center" >    <div class="control-group">
-       <div class="controls">
-          <h1>Sign in </h1><br>
-        </div>
+<br><br>
+<form action="./login_action.php" method="POST">
+<div class="well col-md-6 col-md-offset-3">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+      </div> <!-- /.modal-header -->
 
-          <label class="control-label" for="email">Email</label>
-          <div class="controls">
-            <input class="focus" id="LoginForm_email" name="email" placeholder="Email" type="text" value="">
-          </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label" for="password">Password</label>
-          <div class="controls">
-            <input autocomplete="off" id="LoginForm_password" name="pass" placeholder="Password" type="password">
-          </div>
-        </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" id="uLogin" placeholder="Login">
+              <label for="uLogin" style="color: black" class="input-group-addon glyphicon glyphicon-user"></label>
+            </div>
+          </div> <!-- /.form-group -->
 
-        <div class="control-group">
-          <div class="controls">
-            <label class="checkbox">
-              <input id="ytLoginForm_rememberMe" name="rememberme" type="checkbox" value="1"> Keep me signed in on this computer
+          <div class="form-group">
+            <div class="input-group">
+              <input type="password" class="form-control" id="uPassword" placeholder="Password">
+              <label for="uPassword" style="color: black" class="input-group-addon glyphicon glyphicon-lock"></label>
+            </div> <!-- /.input-group -->
+          </div> <!-- /.form-group -->
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
             </label>
-          </div>
-        </div>
+          </div> <!-- /.checkbox -->
+        </form>
 
-        <div class="controls">
-          <input class="btn btn-primary" data-disable-with="Signing in..." id="signin_button" name="commit" type="submit" value="Sign In">
-          <br><br>Don't have an account yet? <a href="./register.php">Sign up</a>
-          <br><a href="./forgotpassword.php">Forgot password?</a>
-        </div>
-        
-</form>    </div>
-  </div>
-</div>
-<br>
-    </div>
+      </div> <!-- /.modal-body -->
 
-</div><!-- content -->
-</div>
+      <div class="modal-footer">
+        <button class="form-control btn btn-primary">Login</button>
+      </div> <!-- /.modal-footer -->
+
+</div>        
+</form>
