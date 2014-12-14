@@ -21,7 +21,7 @@
 <a class="navbar-brand" href="#">Learnify</a>
 </div>
 <ul class="nav navbar-nav">
-<li><a href="#">Home</a></li>
+<li><a href="./body=home.php">Home</a></li>
 <li><a href="#">Courses</a></li>
 <li><a href="#">Tutorials</a></li>
 <li><a href="#">Exams</a></li>
