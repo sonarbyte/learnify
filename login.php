@@ -9,14 +9,14 @@
         <form role="form">
           <div class="form-group">
             <div class="input-group">
-              <input type="text" class="form-control" id="uLogin" placeholder="Login">
+              <input type="text" class="form-control" id="uLogin" placeholder="Login" name="login">
               <label for="uLogin" style="color: black" class="input-group-addon glyphicon glyphicon-user"></label>
             </div>
           </div> <!-- /.form-group -->
 
           <div class="form-group">
             <div class="input-group">
-              <input type="password" class="form-control" id="uPassword" placeholder="Password">
+              <input type="password" class="form-control" id="uPassword" placeholder="Password" name="pass">
               <label for="uPassword" style="color: black" class="input-group-addon glyphicon glyphicon-lock"></label>
             </div> <!-- /.input-group -->
           </div> <!-- /.form-group -->

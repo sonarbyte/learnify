@@ -21,7 +21,7 @@
 <a class="navbar-brand" href="#">Learnify</a>
 </div>
 <ul class="nav navbar-nav">
-<li><a href="./body=home.php">Home</a></li>
+<li><a href="./?body=home.php">Home</a></li>
 <li><a href="#">Courses</a></li>
 <li><a href="#">Tutorials</a></li>
 <li><a href="#">Exams</a></li>
@@ -36,6 +36,7 @@
 <li><a href="#">Contact Us</a></li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
+ <?php  session_start();  ?>
    <?php if(isset($_SESSION['dat_r']) and !empty($_SESSION['dat_r']))
 			 {
 
