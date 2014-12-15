@@ -5,5 +5,4 @@
         <li><a href="./?body=add.php"><i class="glyphicon glyphicon-plus"></i> Create learnifyers</a></li>
         <li><a href="./?body=my_learnifyer.php"><i class="glyphicon glyphicon-th-list"></i> My learnifyers</a></li>
         <li><a href="./?body=add.php"><i class="glyphicon glyphicon-star-empty"></i> Favorites </a></li>
-
 </ul>
