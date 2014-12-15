@@ -9,7 +9,7 @@
   ?>
   </div>
   <div class="col-sm-8">
-    <?php if (isset($_GET['body'])) include($_GET['body']); else include("home.php");  ?> 
+    <?php if (isset($_GET['body']) and !empty($_GET['body'])) include($_GET['body']); else include("home.php");  ?> 
   </div>
   <div class="col-sm-2">
   </div>
