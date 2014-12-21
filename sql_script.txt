@@ -1,0 +1,12 @@
+CREATE DATABASE client_db ;
+
+CREATE TABLE clients
+(
+client_id int NOT NULL AUTO_INCREMENT,
+email varchar(200),
+pass varchar(200),
+session varchar(200),
+PRIMARY KEY (client_id)
+);
+
+

@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 
 if (!isset($_SESSION['dat_r']) and isset($_POST['pass']) and !empty($_POST['pass']) and isset($_POST['login']) and !empty($_POST['login'])) {
     
@@ -8,8 +8,7 @@ if (!isset($_SESSION['dat_r']) and isset($_POST['pass']) and !empty($_POST['pass
     $pass  = htmlentities(trim($_POST['pass']), ENT_NOQUOTES);
     $login = htmlentities(trim($_POST['login']), ENT_NOQUOTES);    
     $pass  = htmlspecialchars($pass, ENT_QUOTES);
-    $login = htmlspecialchars($email, ENT_QUOTES);
-    
+    $login = htmlspecialchars($login, ENT_QUOTES);
     $pass  = str_replace(array(
         '\t',
         '\n',
@@ -45,38 +44,28 @@ if (!isset($_SESSION['dat_r']) and isset($_POST['pass']) and !empty($_POST['pass
         'from',
         '"',
         "'"
-    ), '', $login);
-    
-    
-    
-    $con    = mysqli_connect("mysql5.000webhost.com", "a9035013_client", "a9035013", "a9035013_client");
+    ), '', $login); 
+    $con    = mysqli_connect("127.0.0.1", "root", "4306zodiac", "client_db");
     $result = mysqli_query($con, "SELECT * FROM clients where email='$login' and pass='$pass' ;");
-    $i      = 0;
+    $i      = 0 ;
     while ($row = mysqli_fetch_array($result)) {
         $i = $i + 1;
-        $s = $row['id'];
+        $s = $row['client_id'];
     }
-    if ($i == 1) {
+    if ($i == 1 ) {
         
         $session           = md5(uniqid(rand(), true));
-        $result            = mysqli_query($con, "UPDATE clients SET session='$session' WHERE id='$s' ");
+        $result            = mysqli_query($con, "UPDATE clients SET session='$session' WHERE client_id='$s' ");
         $_SESSION['dat_r'] = $session;
-        header('Location: index.php');
-        
-        
-        
+        header('Location: ./?body=home.php');
     } else {
         echo "wrong password or email !. " . "</br>";
         echo "Please go <a href='javascript:history.go(-1)'>back</a> and try again.";
     }
-    
     mysqli_close($con);
 } else {
-    header('Location: index.php');
+    header('Location: ./?body=home.php');
 }
-
-
-
 
 ?>
 
