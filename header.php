@@ -12,6 +12,9 @@
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script src="./ckeditor/ckeditor.js"></script>
+<script src="./ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js"></script>
+<link href="./ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" rel="stylesheet">
 </head>
 <body>
   <nav class="navbar navbar-top navbar-inverse navbar-fixed-top navbar-default" role="navigation">
