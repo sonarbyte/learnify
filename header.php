@@ -8,7 +8,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-social.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
+<link href="./fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -21,7 +22,7 @@
    <div class="container">
     <a class="navbar-brand" href="/"><i><b style="color:#FFF">Learnify</b></i></a>
     <ul class="nav navbar-nav">
-	<li><a style='color:#ddd' href="#">Home</a></li>
+	<li><a style='color:#ddd' href="./?body=home.php">Home</a></li>
 	<li><a style='color:#ddd' href="#">Courses</a></li>
 	<li><a style='color:#ddd' href="#">Tutorials</a></li>
 	<li><a style='color:#ddd' href="#">Exams</a></li>
